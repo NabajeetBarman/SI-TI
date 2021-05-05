@@ -13,7 +13,7 @@ As per ITU-T Recommendation P.910 ("Subjective video quality assessment methods 
 
 ## Output: 
 
-The output results are stored in a `SITIVals.csv` file. Additionally, the .mat files containing all calculation details including per-frame SI and TI vals are saved in the current directory which can be used later for other related analysis (such as mean/media SI TI calculation).
+The output results are stored in a `SITIVals.csv` file. Additionally, the .mat files containing all calculation details including per-frame SI and TI vals are saved in the current directory which can be used later for other related analysis (such as mean/median SI TI calculation).
 
 ## Related Github Repository
 
