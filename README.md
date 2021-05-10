@@ -19,6 +19,12 @@ The output results are stored in a `SITIVals.csv` file. Additionally, the .mat f
 
 There is a Python based implementation for SI TI calculation available on Github [here](https://github.com/slhck/siti).
 
+# Citation
+
+If you find this file useful and use it in your work, please provide a link to this Github page in your publication and cite our below mentioned papers:
+
+`N. Barman, N. Khan and M. G. Martini, "Analysis of Spatial and Temporal Information Variation for 10-Bit and 8-Bit Video Sequences," 2019 IEEE 24th International Workshop on Computer Aided Modeling and Design of Communication Links and Networks (CAMAD), 2019, pp. 1-6, doi: 10.1109/CAMAD.2019.8858486.`
+
 # Contact
 
 Nabajeet Barman, Kingston University, London, UK (n.barman@kingston.ac.uk, n.barman@ieee.org)
