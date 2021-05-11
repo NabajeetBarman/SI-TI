@@ -24,7 +24,7 @@ fprintf( out_fid, '%s, %s, %s\n', 'Sequence Name', 'SI', 'TI');
 
 for i = 1:length(fns)
     fid = fopen(fns(i).name);
-    %[SI, TI] = SITI_8bit(fns(i).name,video_height,video_width);
+    [SI, TI] = SITI_8bit(fns(i).name,video_height,video_width);
     fprintf( out_fid, '%s,%d, %d\n', fns(i).name, SI, TI);
     fclose(fid);
 end
