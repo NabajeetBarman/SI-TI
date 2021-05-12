@@ -43,11 +43,17 @@ for f = 1:F
     %   Spatial information
     hor_edge = imfilter(Y, h);
     vert_edge = imfilter(Y, h');    
+    % Discard the first and last rows and columns to avoid unwanted edge effects - for details see ITU-T Rec P.901, Page 20
+    hor_edge_dis = hor_edge(2:end-1,2:end-1);
+    vert_edge_dis = vert_edge(2:end-1,2:end-1);
+    % Calculate the SI value for the whole frame
+    SI_array(f) = std(sqrt(hor_edge_dis(:).^2 + vert_edge_dis(:).^2));% 
     SI_array(f) = std(sqrt(hor_edge(:).^2 + vert_edge(:).^2));
     %   Temporal information
     if f > 1
         D = Y - Y_prev;
-        TI_array(f) = std(D(:));
+        D_dis = D(2:end-1,2:end-1);
+        TI_array(f) = std(D_dis(:));
     end
     Y_prev = Y;
 end
