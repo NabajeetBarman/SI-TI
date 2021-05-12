@@ -7,17 +7,31 @@ Two set of scripts are being provided here. One for 8-bit YUV videos and one for
 
 `SITI_8bit`/`SITI_10bit` function which calculates the SI and TI values. It can be easily modified for supporting other chroma sub-sampling, other bit-depths, and/or calculating the average SI/TI vals.
 
-## Note: 
-
-As per ITU-T Recommendation P.910 ("Subjective video quality assessment methods for multimedia applications") only the Luminance (Y) component is taken into account for SI TI calculation.
-
 ## Output: 
 
 The output results are stored in a `SITIVals.csv` file. Additionally, the .mat files containing all calculation details including per-frame SI and TI vals are saved in the current directory which can be used later for other related analysis (such as mean/median SI TI calculation).
 
+# Theoretical Background
+
+Spatial Information (SI) and Temporal Information (TI) as defined in [ITU-T Recommendation P.910 ("Subjective video quality assessment methods for multimedia applications")](https://www.itu.int/rec/T-REC-P.910-200804-I/en) are widely used metrics as an approximate indicator of scene complexity and are commonly used for test sequence selection for quality assessment related tasks.
+
+## Spatial Information (SI)
+
+![image](https://user-images.githubusercontent.com/48479111/117988295-2fb49580-b333-11eb-8df3-5c4502fb1acb.png)
+       
+                                Source: ITU-T Recommendation P.910
+
+## Temporal Information (TI)
+
+![image](https://user-images.githubusercontent.com/48479111/117988986-d7ca5e80-b333-11eb-9d3f-772d46ee66a2.png)
+
+                                Source: ITU-T Recommendation P.910
+
+As per ITU-T Recommendation P.910 ("Subjective video quality assessment methods for multimedia applications") only the Luminance (Y) component is taken into account for SI TI calculation.
+
 ## Related Github Repository
 
-There is a Python based implementation for SI TI calculation available on Github [here](https://github.com/slhck/siti).
+There is a Python based implementation for SI TI calculation available on Github [here](https://github.com/slhck/siti). The MATLAB implementation provided here gives the same results (upto 2 decimal places) as the Python implementation for YUV420 videos in Full Range mode.
 
 # Citation
 
