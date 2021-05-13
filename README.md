@@ -7,6 +7,12 @@ Two set of scripts are being provided here. One for 8-bit YUV videos and one for
 
 `SITI_8bit`/`SITI_10bit` function which calculates the SI and TI values. It can be easily modified for supporting other chroma sub-sampling, other bit-depths, and/or calculating the average SI/TI vals.
 
+Note: The code has been tested on sample video sequences using MATLAB 2021a on both Windows and Ubuntu OS.
+
+## Full Range (FR) and Limited Range (LR) YUV videos
+
+There is support for SI and TI calculation for both 8-bit and 10-bit, Full-Range as well as Limited-Range YUV videos. In 8-bit Full-Range videos, pixel values range from 0-255 while for 8-bit Limited-Range YUV videos, pixel values are in the range from 16-235. Similarly, in 10-bit Full-Range videos, pixel values range from 0-1023 while for 10-bit Limited-Range YUV videos, pixel values are in the range from 64-940.
+
 ## Output: 
 
 The output results are stored in a `SITIVals.csv` file. Additionally, the .mat files containing all calculation details including per-frame SI and TI vals are saved in the current directory which can be used later for other related analysis (such as mean/median SI TI calculation).
@@ -31,11 +37,11 @@ As per ITU-T Recommendation P.910 ("Subjective video quality assessment methods 
 
 ## Related Github Repository
 
-There is a Python based implementation for SI TI calculation available on Github [here](https://github.com/slhck/siti). The MATLAB implementation provided here gives the same results (upto 2 decimal places) as the Python implementation for YUV420 videos in Full Range mode.
+There is a Python based implementation for SI TI calculation available on Github [here](https://github.com/slhck/siti). Both implementations (this MATLAB and the Python) provides same results (upto 2 decimal places) for 8-bit YUV420 videos.
 
 # Citation
 
-If you find this file useful and use it in your work, please provide a link to this Github page in your publication and cite our below mentioned paper:
+If you find this repository useful and use it in your work, please provide a link to this Github page in your publication and cite our below mentioned paper:
 
 `N. Barman, N. Khan and M. G. Martini, "Analysis of Spatial and Temporal Information Variation for 10-Bit and 8-Bit Video Sequences," 2019 IEEE 24th International Workshop on Computer Aided Modeling and Design of Communication Links and Networks (CAMAD), 2019, pp. 1-6, doi: 10.1109/CAMAD.2019.8858486.`
 
