@@ -1,4 +1,5 @@
-# SI-TI
+# Spatial Information (SI) and Temporal Information (TI) calculation
+
 Spatial Information (SI)  and Temporal Information (TI) calculation of YUV videos using MATLAB
 
 Two set of scripts are being provided here. One for 8-bit YUV videos and one for 10-bit YUV videos. Both folders consists of two scripts.
