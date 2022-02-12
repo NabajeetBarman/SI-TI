@@ -48,4 +48,4 @@ If you find this repository useful and use it in your work, please provide a lin
 
 # Contact
 
-Nabajeet Barman, Kingston University, London, UK (n.barman@kingston.ac.uk, n.barman@ieee.org)
+Nabajeet Barman, Kingston University, London, UK (nabajeet.barman@kingston.ac.uk, n.barman@ieee.org)
